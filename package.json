@@ -4,12 +4,13 @@
   "description": "jeff saenz testing ",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint .",
+    "lint": "./node_modules/.bin/eslint . --ext .js --ext .jsx",
     "dev": "open http://localhost:3000 & ./node_modules/.bin/webpack-dev-server"
   },
   "author": "jeff saenz",
   "license": "ISC",
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2"
@@ -21,7 +22,10 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.4",
-    "eslint": "^4.3.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",

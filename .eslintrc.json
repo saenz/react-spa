@@ -1,0 +1,41 @@
+{
+   "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "jest": true
+   },
+   "extends": "airbnb",
+   "parserOptions": {
+      "ecmaFeatures": {
+         "experimentalObjectRestSpread": true,
+         "jsx": true
+      },
+      "sourceType": "module"
+   },
+   "plugins": [
+      "react"
+   ],
+   "rules": {
+			"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "indent": [
+         2,
+         4,
+         {
+            "SwitchCase": 1
+         }
+      ],
+      "linebreak-style": [
+         "error",
+         "unix"
+      ],
+      "no-unused-vars": 0,
+      "no-console": 0
+   },
+   "globals": {
+      "process": true,
+      "__dirname": true,
+      "__filename": true,
+      "_testColors": true
+   }
+}
