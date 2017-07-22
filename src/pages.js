@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom'
-import './stylesheets/pages.scss'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './stylesheets/pages.scss';
 
 export const Home = () =>
-    <div className="home">
+    (<div className="home">
         <h1>[Company Website]</h1>
         <nav>
             <Link to="about">[About]</Link>
@@ -10,7 +11,7 @@ export const Home = () =>
             <Link to="products">[Products]</Link>
             <Link to="contact">[Contact Us]</Link>
         </nav>
-    </div>
+    </div>);
 
 export const About = () =>
     <section className="events">
